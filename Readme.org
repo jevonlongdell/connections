@@ -2,5 +2,38 @@
 
 This is a simple python script which tries to solve the NYT connections puzzle. It uses a word2vec, and a succesivley looks for the most closely related four words in whatever is left of the original 16 words.
 
-It doesn't reliably solve the puzzles but it gets some groupings and does provide suggestions that are useful for humans when they are trying to solve these puzzles.
+It doesn't reliably solve the puzzles. but it gets some groupings right. The quality of the suggestions means that they are generally helpful to humans when they are trying to solve these puzzles.
 
+#+BEGIN_EXAMPLE
+$ python connections.py
+Loading model
+
+
+Enter 16 words, each on a new line
+> bellyflop
+> parrot
+> jackknife
+> pirate
+> cannonball
+> backflip
+> pillar
+> backbone
+> anchor  
+> repeat
+> talk
+> satellite
+> ham
+> echo
+> quote
+> cornerstone
+
+
+Looking for connections within = 
+{'repeat', 'pirate', 'backbone', 'quote', 'jackknife', 'backflip', 'talk', 'bellyflop', 'satellite', 'pillar', 'anchor', 'parrot', 'ham', 'cornerstone', 'echo', 'cannonball'}
+
+
+('backbone', 'pillar', 'anchor', 'cornerstone')
+('jackknife', 'backflip', 'bellyflop', 'cannonball')
+('repeat', 'quote', 'talk', 'echo')
+('parrot', 'pirate', 'satellite', 'ham')
+#+END_EXAMPLE
