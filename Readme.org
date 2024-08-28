@@ -1,0 +1,6 @@
+* Connections
+
+This is a simple python script which tries to solve the NYT connections puzzle. It uses a word2vec, and a succesivley looks for the most closely related four words in whatever is left of the original 16 words.
+
+It doesn't reliably solve the puzzles but it gets some groupings and does provide suggestions that are useful for humans when they are trying to solve these puzzles.
+
